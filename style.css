@@ -75,3 +75,19 @@ nav {
   height: 100%;
   transform: translateY(100%);
 }
+
+.hide {
+  background: black;
+  /*  이걸 통해서 숨겼다는 얘기네, translateY로 100% 움직였으니까. 
+  좀 지저분한 느낌이 있지만 뭐 일단 넘어가자.
+  */
+  overflow: hidden;
+}
+
+.hide span {
+  transform: translateY(100%);
+  /* transform은 block element에서만 먹히는거니까
+  inline-block을 해준 모습이다.
+  */
+  display: inline-block;
+}
